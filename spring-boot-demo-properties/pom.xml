@@ -64,6 +64,13 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+    <!--可以直接在yaml或者properties文件中使用pom文件中定义的标签： @version@-->
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
 	</build>
 
 </project>
